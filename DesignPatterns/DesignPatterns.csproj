@@ -124,7 +124,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Classes\Bridge.cs" />
+    <Compile Include="Classes\Bridge\Abstraction.cs" />
+    <Compile Include="Classes\Bridge\IBridge.cs" />
+    <Compile Include="Classes\Bridge\Object1.cs" />
+    <Compile Include="Classes\Bridge\Object2.cs" />
+    <Compile Include="Classes\Flyweight\Flyweight.cs" />
+    <Compile Include="Classes\Flyweight\FLyweightFactory.cs" />
+    <Compile Include="Classes\Flyweight\IFlyweight.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
