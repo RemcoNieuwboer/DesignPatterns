@@ -11,10 +11,10 @@ namespace DesignPatterns.Tests
         public void Flyweight()
         {
             FLyweightFactory factory = new FLyweightFactory();
-            factory["item1"].IntrinsicState = "somevalue";
+            factory["item1"].Operation("somevalue");
             Assert.AreEqual(factory.Count(), 1);
 
-            factory["item2"].IntrinsicState = "another value";
+            factory["item2"].Operation("another value");
             Assert.AreEqual(factory.Count(), 2);
 
             Assert.AreEqual(factory["item1"].IntrinsicState, "somevalue");

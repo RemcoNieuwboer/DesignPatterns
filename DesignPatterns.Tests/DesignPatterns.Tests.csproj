@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{837171DB-E287-43BC-8DDB-8903CEB3F467}</ProjectGuid>
+    <ProjectGuid>{12C3FAAC-D5BE-48CA-9287-4D664B1BD12F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DesignPatterns.Tests</RootNamespace>
@@ -50,14 +50,16 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTestAdapter.cs" />
     <Compile Include="UnitTestBridge.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestDecorator.cs" />
     <Compile Include="UnitTestFlyweight.cs" />
+    <Compile Include="UnitTestProxy.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DesignPatterns\DesignPatterns.csproj">
-      <Project>{9B54C9B6-9D6C-4388-8D1E-D712D333A9AF}</Project>
+      <Project>{2CF01BC8-2CA2-49EB-A407-E3F4E9F3C83B}</Project>
       <Name>DesignPatterns</Name>
     </ProjectReference>
   </ItemGroup>
