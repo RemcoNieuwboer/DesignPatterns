@@ -120,9 +120,18 @@
     <Compile Include="Classes\Bridge\IBridge.cs" />
     <Compile Include="Classes\Bridge\Object1.cs" />
     <Compile Include="Classes\Bridge\Object2.cs" />
+    <Compile Include="Classes\Composite\Composite.cs" />
+    <Compile Include="Classes\Decorator\Component.cs" />
+    <Compile Include="Classes\Decorator\DecoratorA.cs" />
+    <Compile Include="Classes\Decorator\DecoratorB.cs" />
+    <Compile Include="Classes\Decorator\IComponent.cs" />
     <Compile Include="Classes\Flyweight\Flyweight.cs" />
     <Compile Include="Classes\Flyweight\FLyweightFactory.cs" />
     <Compile Include="Classes\Flyweight\IFlyweight.cs" />
+    <Compile Include="Classes\Proxy\ISubject.cs" />
+    <Compile Include="Classes\Proxy\ProtectionProxy.cs" />
+    <Compile Include="Classes\Proxy\RealSubject.cs" />
+    <Compile Include="Classes\Proxy\VirtualProxy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>

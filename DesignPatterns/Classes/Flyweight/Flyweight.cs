@@ -7,24 +7,19 @@ namespace DesignPatterns.Classes.Flyweight
 {
     public class Flyweight : IFlyweight
     {
-        private string IntrinsicStateValue;
+        private string _intrinsicstatevalue;
 
         public string IntrinsicState
         {
             get
             {
-                return IntrinsicStateValue;
-            }
-
-            set
-            {
-                IntrinsicStateValue = value;
-            }
+                return _intrinsicstatevalue;
+            }           
         }
 
         public void Operation(string value)
         {
-            IntrinsicStateValue = value;
+            _intrinsicstatevalue = value;
         }
     }
 }
