@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9B54C9B6-9D6C-4388-8D1E-D712D333A9AF}</ProjectGuid>
+    <ProjectGuid>{2CF01BC8-2CA2-49EB-A407-E3F4E9F3C83B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -94,55 +94,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System.Web.Razor">
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Webpages">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Webpages.Deployment">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Webpages.Razor">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Helpers">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Infrastructure">
-      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc">
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Global.asax" />
-    <Content Include="scripts\ai.0.15.0-build58334.js" />
-    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
-    <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Classes\Adapter\AdapteeA.cs" />
-    <Compile Include="Classes\Adapter\AdapteeB.cs" />
-    <Compile Include="Classes\Adapter\Adapter.cs" />
-    <Compile Include="Classes\Adapter\IAdaptee.cs" />
-    <Compile Include="Classes\Adapter\IAdapter.cs" />
-    <Compile Include="Classes\Bridge\Abstraction.cs" />
-    <Compile Include="Classes\Bridge\IBridge.cs" />
-    <Compile Include="Classes\Bridge\Object1.cs" />
-    <Compile Include="Classes\Bridge\Object2.cs" />
-    <Compile Include="Classes\Flyweight\Flyweight.cs" />
-    <Compile Include="Classes\Flyweight\FLyweightFactory.cs" />
-    <Compile Include="Classes\Flyweight\IFlyweight.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -155,9 +106,24 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Content Include="scripts\ai.0.15.0-build58334.js" />
+    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Adapter\AdapteeA.cs" />
+    <Compile Include="Classes\Adapter\AdapteeB.cs" />
+    <Compile Include="Classes\Adapter\Adapter.cs" />
+    <Compile Include="Classes\Adapter\IAdaptee.cs" />
+    <Compile Include="Classes\Adapter\IAdapter.cs" />
+    <Compile Include="Classes\Bridge\Abstraction.cs" />
+    <Compile Include="Classes\Bridge\IBridge.cs" />
+    <Compile Include="Classes\Bridge\Object1.cs" />
+    <Compile Include="Classes\Bridge\Object2.cs" />
+    <Compile Include="Classes\Flyweight\Flyweight.cs" />
+    <Compile Include="Classes\Flyweight\FLyweightFactory.cs" />
+    <Compile Include="Classes\Flyweight\IFlyweight.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -172,7 +138,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51153</DevelopmentServerPort>
+          <DevelopmentServerPort>62403</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:51153/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
