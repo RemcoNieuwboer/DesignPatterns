@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace DesignPatterns.Classes.Adapter
 {
     public class Adapter : IAdapter
     {
-        private IAdaptee _adaptee;
+        private readonly IAdaptee _adaptee;
         public Adapter(IAdaptee adaptee)
         {
             _adaptee = adaptee;

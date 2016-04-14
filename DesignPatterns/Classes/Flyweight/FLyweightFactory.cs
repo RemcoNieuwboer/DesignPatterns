@@ -1,31 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 
 namespace DesignPatterns.Classes.Flyweight
 {
     public class FLyweightFactory
     {
-        Dictionary<string, IFlyweight> flyweights = new Dictionary<string, IFlyweight>();
+        private readonly Dictionary<string, IFlyweight> _flyweights = new Dictionary<string, IFlyweight>();
 
         public FLyweightFactory()
         {
-            flyweights.Clear();
+            _flyweights.Clear();
         }
 
         public int Count()
         {
-            return flyweights.Count;
+            return _flyweights.Count;
         }
 
         public IFlyweight this[string index] {
             get {
-                if (!flyweights.ContainsKey(index))
+                if (!_flyweights.ContainsKey(index))
                 {
-                    flyweights[index] = new Flyweight();                   
+                    _flyweights[index] = new Flyweight();                   
                 }
-                return flyweights[index];
+                return _flyweights[index];
             }
         }
     }

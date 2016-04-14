@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Patterns.Composite
+namespace DesignPatterns.Classes.Composite
 {
     public interface IComponent<T>
     {
