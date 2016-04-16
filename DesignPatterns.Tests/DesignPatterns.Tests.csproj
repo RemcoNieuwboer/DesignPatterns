@@ -53,6 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTestAdapter.cs" />
     <Compile Include="UnitTestBridge.cs" />
+    <Compile Include="UnitTestComposite.cs" />
     <Compile Include="UnitTestDecorator.cs" />
     <Compile Include="UnitTestFlyweight.cs" />
     <Compile Include="UnitTestProxy.cs" />

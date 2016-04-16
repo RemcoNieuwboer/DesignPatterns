@@ -1,54 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Text;
 
 namespace DesignPatterns.Classes.Composite
 {
-    public interface IComponent<T>
-    {
-        void Add(IComponent<T> c);
-        IComponent<T> Remove(T s);
-        string Display(int index);
-        IComponent<T> Find(T s);
-        T Name { get; set; }
-    }
-
-    public class Component<T> : IComponent<T>
-    {
-        public T Name { get; set; }
-
-        public Component(T name)
-        {
-            Name = name;
-        }
-
-        public void Add(IComponent<T> c)
-        {
-            throw new Exception("Cannot add to an item");
-        }
-
-        public IComponent<T> Remove(T s)
-        {
-            throw new Exception("Cannot remove directly");
-        }
-
-        public string Display(int index)
-        {
-            return new string('-', index) + Name;
-        }
-
-        public IComponent<T> Find(T s)
-        {
-            if (s.Equals(Name))
-            {
-                return this;
-            }
-            else
-            {
-                return null;
-            }
-        }
-    }
-
     public class Composite<T> : IComponent<T>
     {
         private readonly List<IComponent<T>> _list;
@@ -94,9 +48,15 @@ namespace DesignPatterns.Classes.Composite
             }
         }
 
-        public string Display(int index)
+        public string Display(int depth)
         {
-            throw new NotImplementedException();
+           var s = new StringBuilder();
+            s.Append(new string('-', depth) + Name + ": " + _list.Count + " items in list\n");
+            foreach (var c in _list)
+            {
+                s.Append(c.Display(depth + 2));
+            }
+            return s.ToString();
         }
     }
 
