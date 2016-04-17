@@ -55,7 +55,9 @@
     <Compile Include="UnitTestBridge.cs" />
     <Compile Include="UnitTestComposite.cs" />
     <Compile Include="UnitTestDecorator.cs" />
+    <Compile Include="UnitTestFacade.cs" />
     <Compile Include="UnitTestFlyweight.cs" />
+    <Compile Include="UnitTestPrototype.cs" />
     <Compile Include="UnitTestProxy.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -127,9 +127,14 @@
     <Compile Include="Classes\Decorator\DecoratorA.cs" />
     <Compile Include="Classes\Decorator\DecoratorB.cs" />
     <Compile Include="Classes\Decorator\IComponent.cs" />
+    <Compile Include="Classes\Facade\Facade.cs" />
+    <Compile Include="Classes\Facade\Internal.cs" />
     <Compile Include="Classes\Flyweight\Flyweight.cs" />
     <Compile Include="Classes\Flyweight\FLyweightFactory.cs" />
     <Compile Include="Classes\Flyweight\IFlyweight.cs" />
+    <Compile Include="Classes\Prototype\Component.cs" />
+    <Compile Include="Classes\Prototype\ComponentData.cs" />
+    <Compile Include="Classes\Prototype\Prototype.cs" />
     <Compile Include="Classes\Proxy\ISubject.cs" />
     <Compile Include="Classes\Proxy\ProtectionProxy.cs" />
     <Compile Include="Classes\Proxy\RealSubject.cs" />
