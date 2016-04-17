@@ -129,6 +129,11 @@
     <Compile Include="Classes\Decorator\IComponent.cs" />
     <Compile Include="Classes\Facade\Facade.cs" />
     <Compile Include="Classes\Facade\Internal.cs" />
+    <Compile Include="Classes\Factory\Creator.cs" />
+    <Compile Include="Classes\Factory\DefaultComponent.cs" />
+    <Compile Include="Classes\Factory\ComponentA.cs" />
+    <Compile Include="Classes\Factory\ComponentB.cs" />
+    <Compile Include="Classes\Factory\IComponent.cs" />
     <Compile Include="Classes\Flyweight\Flyweight.cs" />
     <Compile Include="Classes\Flyweight\FLyweightFactory.cs" />
     <Compile Include="Classes\Flyweight\IFlyweight.cs" />
