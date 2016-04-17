@@ -1,7 +1,7 @@
 ﻿using DesignPatterns.Classes.Proxy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Patterns.Tests
+namespace DesignPatterns.Tests
 {
     [TestClass]
     public class UnitTestProxy

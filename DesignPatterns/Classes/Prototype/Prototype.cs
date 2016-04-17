@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.Classes.Prototype
 {
@@ -13,7 +9,7 @@ namespace DesignPatterns.Classes.Prototype
     {
         public T Clone()
         {
-            return (T) this.MemberwiseClone();
+            return (T) MemberwiseClone();
         }
 
         public T Copy()
